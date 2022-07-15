@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@600;800&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+
+header h1 {
+  /* positioning */
+  position: fixed; /* or absolute */
+  top: 30%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  /* style */
+  color: #2d2926;
+  font-family: "Khula", sans-serif;
+  font-size: 4.9rem;
+  font-weight: 800;
+}
+
+header h3 {
+  /* positioning */
+  position: fixed; /* or absolute */
+  top: 38%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  /* style */
+  color: #2d2926;
+  font-family: "Khula", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer {
+  position: fixed; /* or absolute */
+  top: 90%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+footer:first-child {
+    left: 20%;
+    color: #2d2926;
+
+}
+
+footer:last-child {
+    left: 80%;
+}
+
+a:visited {
+    color: green;
+  }
+
+  a:hover {
+    color: hotpink;
+  }
+
+  a:active {
+    color: #2d2926;
+  }
+
+  a:link {
+    color: #2d2926;
+  }

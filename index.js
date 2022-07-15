@@ -2,7 +2,7 @@
       var scene = new THREE.Scene();
 
       // field of view
-      var fov = 75;
+      var fov = 120;
       // aspect ratio - use full width of container / height
       var aspect = window.innerWidth / window.innerHeight;
       // setup the clipping plane
@@ -27,17 +27,10 @@
       var widthSegments = 50;
       var heightSegments = 50;
 
-      var geometry = new THREE.SphereGeometry(
-        radius,
-        widthSegments,
-        heightSegments
-      );
-      // setup material to wrap geometry with
-      // wireframe line width won't change no matter what value is set
-      // reason: Due to limitations in the ANGLE (https://code.google.com/p/angleproject/) layer
-      // on Windows platforms linewidth will always be 1 regardless of the set value.
+      var geometry = new THREE.IcosahedronGeometry(3.5, 9);
+      
       var material = new THREE.MeshBasicMaterial({
-        color: 0x2980b9,
+        color: 0xb1c6ec,
         wireframe: true,
       });
       // the Mesh object takes a geometry and applies a material to it that can be
@@ -55,8 +48,25 @@
       function render() {
         requestAnimationFrame(render);
         // rotation logic goes here
-        sphere.rotation.y += 0.001;
+        sphere.rotation.y += 0.0005;
         renderer.render(scene, camera);
       }
       // call our render function to display the sphere
       render();
+      renderer.setClearColor( 0xf3efe9 );
+
+      gsap.fromTo('.copy span', {
+        x: 50,
+        opacity: 0,
+      },
+      {
+      delay: 1, // 1秒後に発火
+      duration: 2, // 1秒間
+      x: 0,
+      opacity: 1,
+      ease: 'power2.easeOut',
+      stagger: {
+        from: 'start', // 左側から
+        amount: 0.5, // 0.5秒おきに
+      },
+    })
