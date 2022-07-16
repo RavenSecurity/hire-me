@@ -70,3 +70,19 @@
         amount: 0.5, // 0.5秒おきに
       },
     })
+
+    gsap.fromTo('.contact', {
+      x: -50,
+      opacity: 0,
+    },
+    {
+    delay: 2, // 1秒後に発火
+    duration: 2, // 1秒間
+    x: 0,
+    opacity: 1,
+    ease: 'power2.easeOut',
+    stagger: {
+      from: 'start', // 左側から
+      amount: 0.5, // 0.5秒おきに
+    },
+  })

@@ -3,10 +3,20 @@
 html,
 body {
   margin: 0;
+  max-width: 99vw;
+}
+
+::selection {
+  color: white;
+  background: #2d2926;
+}
+
+header {
+    width: 99vw;
 }
 
 header h1 {
-  /* positioning */
+  /* positioning I SHOULD SWITCH TO DISLPAY FLEX OR BBLOCK !!!! */
   position: fixed; /* or absolute */
   top: 30%;
   left: 50%;
@@ -52,7 +62,6 @@ footer {
 footer:first-child {
     left: 20%;
     color: #2d2926;
-
 }
 
 footer:last-child {
