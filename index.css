@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   max-width: 99vw;
+  font-size: calc(15px + 0  .390625vw);
 }
 
 ::selection {
@@ -18,42 +19,23 @@ header {
 
 header h1 {
   /* positioning I SHOULD SWITCH TO DISLPAY FLEX OR BBLOCK !!!! */
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 30%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 
   /* style */
   color: #2d2926;
   font-family: "Khula", sans-serif;
-  font-size: 5rem;
+  font-size: 8vw;
   font-weight: 800;
 
-}
-
-header h3 {
-  /* positioning */
-  position: fixed; /* or absolute */
-  top: 38%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-
-  /* style */
-  color: #2d2926;
-  font-family: "Khula", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-
-  w
 }
 
 footer {
   position: fixed; /* or absolute */
   top: 90%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 
   font-size: 1.5rem;
