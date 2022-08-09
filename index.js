@@ -27,7 +27,7 @@
       var widthSegments = 50;
       var heightSegments = 50;
 
-      var geometry = new THREE.IcosahedronGeometry(3.5, 9);
+      var geometry = new THREE.IcosahedronGeometry(4, 16);
       
       var material = new THREE.MeshBasicMaterial({
         color: 0xb1c6ec,
@@ -86,3 +86,19 @@
       amount: 0.5, // 0.5秒おきに
     },
   })
+
+  gsap.fromTo('.container', {
+    x: -50,
+    opacity: 0,
+  },
+  {
+  delay: 2, // 1秒後に発火
+  duration: 2, // 1秒間
+  x: 0,
+  opacity: 1,
+  ease: 'power2.easeOut',
+  stagger: {
+    from: 'start', // 左側から
+    amount: 0.5, // 0.5秒おきに
+  },
+})
