@@ -27,7 +27,7 @@
       var widthSegments = 50;
       var heightSegments = 50;
 
-      var geometry = new THREE.IcosahedronGeometry(4, 16);
+      var geometry = new THREE.IcosahedronGeometry(4, 10);
       
       var material = new THREE.MeshBasicMaterial({
         color: 0xb1c6ec,

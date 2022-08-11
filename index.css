@@ -8,6 +8,10 @@ body {
   font-size: calc(15px + 0  .390625vw);
 }
 
+img {
+  height: 24px;
+}
+
 ::selection {
   color: white;
   background: #2d2926;
@@ -15,14 +19,21 @@ body {
 
 .container {
   position: fixed; /* or absolute */
-  top: 5%;
+  top: 7%;
   left: 50%;
   transform: translate(-50%, -50%);
+  align-items: center;
 
   font-size: 1.5rem;
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+.logos {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header {
@@ -47,7 +58,7 @@ header h1 {
 
 footer {
   position: fixed; /* or absolute */
-  top: 95%;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
 
