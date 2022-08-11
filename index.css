@@ -5,6 +5,7 @@ html,
 body {
   margin: 0;
   max-width: 99vw;
+  max-height: 99vh;
   font-size: calc(15px + 0  .390625vw);
 }
 
