@@ -58,7 +58,20 @@ header h1 {
   font-family: "Khula", sans-serif;
   font-size: 8vw;
   font-weight: 800;
+}
 
+header h3 {
+  /* positioning I SHOULD SWITCH TO DISLPAY FLEX OR BBLOCK !!!! */
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* style */
+  color: #2d2926;
+  font-family: "Khula", sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
 }
 
 footer {
