@@ -102,3 +102,5 @@
     amount: 0.5, // 0.5秒おきに
   },
 })
+
+// https://codepen.io/vcomics/pen/ZjMpOe
